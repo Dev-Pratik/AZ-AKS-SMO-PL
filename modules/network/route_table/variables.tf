@@ -33,8 +33,4 @@ variable "subnet_id" {
   description = "subnet ID"  
 }
 
-variable "route_table_id" {
-   type = string
-  description = "Route Table ID" 
-  
-}
+

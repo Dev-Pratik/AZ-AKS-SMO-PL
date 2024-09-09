@@ -36,20 +36,24 @@ module "subnet" {
 
 module "route_table" {
  source              = "./modules/network/route_table"
- name                = var.route_table_name
- #and other variables. 
+ route_table_name                = var.route_table_name
+ location = var.location
+ resource_group_name = var.resource_group_name
+ subnet_id = module.subnet.subnet_id
+ tags = var.tags
+ 
  
  routes = [
-   { 
-     name = "route1", 
-     address_prefix = "10.0.0.0/16", 
-     next_hop_type = "VirtualAppliance", 
+   {
+     name = "route1",
+     address_prefix = "10.0.0.0/16",
+     next_hop_type = "VirtualAppliance",
      next_hop_in_ip_address = "10.0.0.4"
    },
-   { 
-     name = "route2", 
-     address_prefix = "10.10.0.0/16", 
-     next_hop_type = "VirtualAppliance", 
+   {
+     name = "route2",
+     address_prefix = "10.10.0.0/16",
+     next_hop_type = "VirtualAppliance",
      next_hop_in_ip_address = "10.0.0.4"
    }
    
