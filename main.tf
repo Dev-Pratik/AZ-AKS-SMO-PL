@@ -35,7 +35,7 @@ module "subnet" {
 ### Route Table ####
 
 module "route_table" {
- source              = ""
+ source              = "./modules/network/route_table"
  name                = var.route_table_name
  #and other variables. 
  
