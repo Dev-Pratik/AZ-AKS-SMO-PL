@@ -108,3 +108,8 @@ variable "routes" {
 }
  
  
+variable "route_table_id" {
+   type = string
+  description = "Route Table ID" 
+  
+}
