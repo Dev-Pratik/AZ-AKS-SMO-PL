@@ -18,7 +18,4 @@ variable "subnet_address_prefixes" {
   description  = "Address prefixes for the subnet"
 }
 
-variable "subnet_id" {
-type = string
-description = "subnet ID"  
-}
+
