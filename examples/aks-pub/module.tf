@@ -5,10 +5,6 @@ module "aks_smo"{
     virtual_network_name    = "vnet-aks-1"
     vnet_address_space      = ["10.0.0.0/16"]
     
-  
-    subnet_name             = "sub-aks-1"
-    subnet_address_prefixes = ["10.0.1.0/24"]
-
     subnets = {
     subnet-3 = {
       subnets_name             = "sub-aks-3"
