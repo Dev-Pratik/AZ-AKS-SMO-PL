@@ -107,7 +107,7 @@ variable "routes" {
   description = "Routes to associate with route table."
 }
  
-variable "subnet_id" {
- type = string
-description = "subnet ID"  
-}
+#variable "subnet_id" {
+# type = string
+#description = "subnet ID"  
+#}
