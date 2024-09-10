@@ -109,6 +109,5 @@ variable "routes" {
  
  variable "subnet_id" {
   type = string
-  default = "subscriptions/739f2744-f1cc-4a85-978e-71f83a5145e5/resourceGroups/pbtest-rg/providers/Microsoft.Network/virtualNetworks/rbtest/subnets/default"
   description = "subnet ID"  
 }
