@@ -28,9 +28,9 @@ variable "tags" {
   description = "Tags"
 }
 
-#variable "subnet_id" {
-#  type = string
-#  description = "subnet ID"  
-#}
+variable "subnet_id" {
+  type = string
+  description = "subnet ID"  
+}
 
 
