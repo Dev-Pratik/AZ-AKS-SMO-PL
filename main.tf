@@ -40,6 +40,7 @@ module "route_table" {
  location = var.location
  resource_group_name = var.resource_group_name
  subnet_id = module.subnet.subnet_id
+ depends_on           = [module.subnet]
  tags = var.tags
  
  
