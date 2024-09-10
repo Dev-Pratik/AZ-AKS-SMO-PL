@@ -17,3 +17,9 @@ output "current_object_id" {
   description = "Object ID"
   value       = data.azurerm_client_config.current.object_id
 }
+
+output "subnet_id"{
+value = module.subnet.subnet_id
+
+}
+
