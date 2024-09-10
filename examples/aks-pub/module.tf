@@ -2,7 +2,7 @@ module "aks_smo"{
     source = "git::https://github.com/Dev-Pratik/AZ-AKS-SMO-PL.git"
     location = "eastus"
     resource_group_name     = "rg-aks-smo"
-    virtual_network_name    = "vnet-aks-1"
+  # virtual_network_name    = "vnet-aks-1"
     vnet_address_space      = ["10.0.0.0/16"]
   
   #  subnet_name             = "sub-aks-1"
@@ -23,5 +23,6 @@ module "aks_smo"{
         "Environment"  : "Dev"
     }    
 }
+
 
 
