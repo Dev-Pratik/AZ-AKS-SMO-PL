@@ -18,7 +18,7 @@ resource "azurerm_route" "routes" {
 
 
  resource "azurerm_subnet_route_table_association" "rt_association" {
-   subnet_id = output.subnet_id
+   subnet_id = var.subnet_id
   route_table_id = azurerm_route_table.route_table.id
  
 }
