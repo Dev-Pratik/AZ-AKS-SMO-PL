@@ -17,3 +17,6 @@ output "current_object_id" {
   description = "Object ID"
   value       = data.azurerm_client_config.current.object_id
 }
+
+
+

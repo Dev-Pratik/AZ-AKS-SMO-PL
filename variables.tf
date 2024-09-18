@@ -35,7 +35,7 @@ variable "vnet_name" {
   description = "Name of Virtual Network."
   default = "vnet-aks-cluster"
   validation {
-    condition     = can(regex("^vnet-[0-9A-Za-z_-]{2,53}[A-Za-z0-9]$", var.vnet_name)) && length(var.virtual_network_name) < 63
+    condition     = can(regex("^vnet-[0-9A-Za-z_-]{2,53}[A-Za-z0-9]$", var.vnet_name)) && length(var.vnet_name) < 63
     error_message = "The given Virtual Network is not valid. Virtual Network name must start with 'vnet-', can only contain letters, numbers, underscores and hyphens. Must have less than 64 characters ending with alphanumeric char only. For eg: vnet-aks-<appname>-<envname>"
   }
 }
@@ -107,7 +107,7 @@ variable "routes" {
   description = "Routes to associate with route table."
 }
  
- variable "subnet_id" {
-  type = string
-  description = "subnet ID"  
-}
+#variable "subnet_id" {
+ #type = string
+#description = "subnet ID"  
+#}
